@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Aura Hospital</title>
+    <link rel="stylesheet" href="css/style-light.css" id="theme-style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" width="60">
+        <h1><i class="fas fa-camera"></i> Hospital Gallery</h1>
+        <button id="toggle-theme" class="theme-btn">Switch Theme</button>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a> <a href="doctors.html">Doctors</a> <a href="book-appointment.html">Book</a>
+        <a href="feedback.html">Feedback</a> <a href="gallery.html">Gallery</a> <a href="compare-doctors.html">Compare</a>
+        <a href="about.html">About</a> <a href="contact.html">Contact</a> <a href="login.html">Login</a> <a href="register.html">Register</a>
+    </nav>
+
+    <main>
+        <!-- Image Gallery -->
+        <div class="gallery">
+            <img src="images/gallery1.jpg" class="gallery-img">
+            <img src="images/gallery2.jpg" class="gallery-img">
+            <img src="images/gallery3.jpg" class="gallery-img">
+            <img src="images/gallery4.jpg" class="gallery-img">
+            <img src="images/hospital.jpg" class="gallery-img">
+            <img src="images/doctor1.jpg" class="gallery-img">
+        </div>
+
+        <!-- Image Map -->
+        <div class="image-map-container">
+            <h3><i class="fas fa-map"></i> Click on departments to explore</h3>
+            <img src="images/map.jpg" usemap="#hospital-map" width="600">
+            <map name="hospital-map">
+                <area shape="rect" coords="0,0,200,200" href="doctors.html" alt="Doctors">
+                <area shape="circle" coords="300,150,50" href="book-appointment.html" alt="Book">
+                <area shape="poly" coords="400,50,450,100,430,150,380,130,380,80" href="contact.html" alt="Contact">
+            </map>
+        </div>
+
+        <!-- Video Section -->
+        <div class="video-section">
+            <h3><i class="fas fa-video"></i> Hospital Tour</h3>
+            <video width="70%" controls poster="images/hospital.jpg">
+                <source src="video/hospital-tour.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+        </div>
+    </main>
+
+    <footer>
+        <p><i class="fas fa-copyright"></i> 2026 Aura Hospital - All Rights Reserved</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
