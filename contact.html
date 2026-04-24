@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Aura Hospital</title>
+    <link rel="stylesheet" href="css/style-light.css" id="theme-style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" width="60">
+        <h1><i class="fas fa-envelope"></i> Contact Us</h1>
+        <button id="toggle-theme" class="theme-btn">Switch Theme</button>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a> <a href="doctors.html">Doctors</a> <a href="book-appointment.html">Book</a>
+        <a href="feedback.html">Feedback</a> <a href="gallery.html">Gallery</a> <a href="compare-doctors.html">Compare</a>
+        <a href="about.html">About</a> <a href="contact.html">Contact</a> <a href="login.html">Login</a> <a href="register.html">Register</a>
+    </nav>
+
+    <main class="centered">
+        <div class="contact-grid">
+            <div class="form-card">
+                <h2><i class="fas fa-paper-plane"></i> Send us a message</h2>
+                <form id="contact-form">
+                    <label><i class="fas fa-user"></i> Name:</label>
+                    <input type="text" id="contact-name" placeholder="Your name">
+
+                    <label><i class="fas fa-envelope"></i> Email:</label>
+                    <input type="email" id="contact-email" placeholder="Your email">
+
+                    <label><i class="fas fa-subject"></i> Subject:</label>
+                    <input type="text" id="contact-subject" placeholder="Subject">
+
+                    <label><i class="fas fa-message"></i> Message:</label>
+                    <textarea rows="4" id="contact-msg" placeholder="Your message"></textarea>
+
+                    <button type="submit"><i class="fas fa-send"></i> Send Message</button>
+                    <div id="contact-message"></div>
+                </form>
+            </div>
+            
+            <div class="contact-info">
+                <h3><i class="fas fa-address-card"></i> Contact Information</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Street, Cairo, Egypt</p>
+                <p><i class="fas fa-phone"></i> +20 120 000 000</p>
+                <p><i class="fas fa-fax"></i> 9000000</p>
+                <p><i class="fas fa-envelope"></i> info@aura.com</p>
+                <p><i class="fas fa-clock"></i> 24/7 Emergency Services</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p><i class="fas fa-copyright"></i> 2026 Aura Hospital - All Rights Reserved</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

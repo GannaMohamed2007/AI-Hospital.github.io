@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Doctors | Aura Hospital</title>
+    <link rel="stylesheet" href="css/style-light.css" id="theme-style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" width="60">
+        <h1>Compare Doctors</h1>
+        <button id="toggle-theme" class="theme-btn">Switch Theme</button>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a> <a href="doctors.html">Doctors</a> <a href="book-appointment.html">Book</a>
+        <a href="feedback.html">Feedback</a> <a href="gallery.html">Gallery</a> <a href="compare-doctors.html">Compare</a>
+        <a href="about.html">About</a> <a href="contact.html">Contact</a> <a href="login.html">Login</a> <a href="register.html">Register</a>
+    </nav>
+
+    <main class="centered">
+        <div class="form-card">
+            <h2><i class="fas fa-chart-line"></i> Doctor Comparison</h2>
+            <p class="map-caption">Select doctors from the <a href="doctors.html">Doctors page</a> (click Compare button)</p>
+            
+            <div class="table-wrapper">
+                <table id="compare-table" class="compare-table">
+                    <thead>
+                        <tr><th>Name</th><th>Specialty</th><th>Rating</th><th>Price ($)</th><th>Experience</th></tr>
+                    </thead>
+                    <tbody id="compare-body">
+                        <tr><td colspan="5">No doctors selected for comparison yet</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <button id="clear-compare"><i class="fas fa-trash"></i> Clear Comparison</button>
+            <div id="compare-info"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p><i class="fas fa-copyright"></i> 2026 Aura Hospital - All Rights Reserved</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
